@@ -7,7 +7,9 @@ def apply_coupons(cart, coupons)
   cart.each_with_index {|val, index|
   
     available_coupon = find_item_by_name_in_collection(val[:item], coupons)
+    
     if available_coupon && val[:count] / available_coupon[:num] > 0
+      binding.pry
       cart[index][:count] = val[:count] % available_coupon[:num]
       coupon_item = {}
       coupon_item[:item] = available_coupon[:item] + "W/COUPON"
