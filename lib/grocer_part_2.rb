@@ -15,6 +15,7 @@ def apply_coupons(cart, coupons)
       coupon_item[:clearance] = cart[index][:clearance]
       coupon_item[:count] = val[:count] / available_coupon[:num]
       cart.push(coupon_item)
+    end
     }
     
       
