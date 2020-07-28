@@ -17,8 +17,7 @@ def apply_coupons(cart, coupons)
       cart.push(coupon_item)
     end
     }
-    
-      
+    cart  
   
 end
 
