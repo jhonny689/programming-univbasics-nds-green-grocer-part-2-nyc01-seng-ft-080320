@@ -62,5 +62,5 @@ def get_total(cart)
   if total > 100
     total *= 0.9
   end
-  return total
+  return total.round(1)
 end
