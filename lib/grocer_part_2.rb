@@ -4,8 +4,11 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-  index = 0
-  while index < cart.size
+  cart.each_with_index {|val, index|
+  
+    current_item = find_item_by_name_in_
+    if(val[:item])
+  }
     
       
   
