@@ -12,7 +12,7 @@ def apply_coupons(cart, coupons)
     if available_coupon && val[:count] / available_coupon[:num] > 0
       cart[index][:count] = val[:count] % available_coupon[:num]
       coupon_item = {}
-      coupon_item[:item] = available_coupon[:item] + "W/COUPON"
+      coupon_item[:item] = available_coupon[:item] + " W/COUPON"
       coupon_item[:price] = available_coupon[:cost] / available_coupon[:num]
       coupon_item[:clearance] = val[:clearance]
       coupon_item[:count] = val[:count] / available_coupon[:num]
