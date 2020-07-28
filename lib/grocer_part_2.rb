@@ -4,11 +4,11 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-  coupons.each{ |coupon|
-    current_item = find_item_by_name_in_collection(coupon[:item],cart)
-    if current_item && current_item[:count]/coupon[:num] > 0
+  index = 0
+  while index < cart.size
+    
       
-  }
+  
 end
 
 def apply_clearance(cart)
