@@ -6,9 +6,11 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
   cart.each_with_index {|val, index|
   
-    current_item = find_item_by_name_in_
-    if(val[:item])
-  }
+    available_coupon = find_item_by_name_in_collection(val[:item], coupons)
+    if available_coupon && val[:count] / available_coupon[:num] > 0
+      cart[index][:count] = val[:count] % available_coupon[:num]
+      cart.push
+    }
     
       
   
